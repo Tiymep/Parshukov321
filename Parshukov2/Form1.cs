@@ -118,8 +118,6 @@ namespace MathQuiz
             }
         }
 
-        private void timeLabel_Click(object sender, EventArgs e)
-        {
 
         }
     }
