@@ -1,0 +1,22 @@
+\\truenas\stud\Главный корпус\303_ИСП_2021-2025\МДК.01.01.Разработка программных модулей\2 подгруппа\Хлюстов\MathQuiz\bin\Debug\MathQuiz.exe.config
+\\truenas\stud\Главный корпус\303_ИСП_2021-2025\МДК.01.01.Разработка программных модулей\2 подгруппа\Хлюстов\MathQuiz\bin\Debug\MathQuiz.exe
+\\truenas\stud\Главный корпус\303_ИСП_2021-2025\МДК.01.01.Разработка программных модулей\2 подгруппа\Хлюстов\MathQuiz\bin\Debug\MathQuiz.pdb
+\\truenas\stud\Главный корпус\303_ИСП_2021-2025\МДК.01.01.Разработка программных модулей\2 подгруппа\Хлюстов\MathQuiz\obj\Debug\MathQuiz.csproj.AssemblyReference.cache
+\\truenas\stud\Главный корпус\303_ИСП_2021-2025\МДК.01.01.Разработка программных модулей\2 подгруппа\Хлюстов\MathQuiz\obj\Debug\MathQuiz.csproj.SuggestedBindingRedirects.cache
+\\truenas\stud\Главный корпус\303_ИСП_2021-2025\МДК.01.01.Разработка программных модулей\2 подгруппа\Хлюстов\MathQuiz\obj\Debug\MathQuiz.Form1.resources
+\\truenas\stud\Главный корпус\303_ИСП_2021-2025\МДК.01.01.Разработка программных модулей\2 подгруппа\Хлюстов\MathQuiz\obj\Debug\MathQuiz.Properties.Resources.resources
+\\truenas\stud\Главный корпус\303_ИСП_2021-2025\МДК.01.01.Разработка программных модулей\2 подгруппа\Хлюстов\MathQuiz\obj\Debug\MathQuiz.csproj.GenerateResource.cache
+\\truenas\stud\Главный корпус\303_ИСП_2021-2025\МДК.01.01.Разработка программных модулей\2 подгруппа\Хлюстов\MathQuiz\obj\Debug\MathQuiz.csproj.CoreCompileInputs.cache
+\\truenas\stud\Главный корпус\303_ИСП_2021-2025\МДК.01.01.Разработка программных модулей\2 подгруппа\Хлюстов\MathQuiz\obj\Debug\MathQuiz.exe
+\\truenas\stud\Главный корпус\303_ИСП_2021-2025\МДК.01.01.Разработка программных модулей\2 подгруппа\Хлюстов\MathQuiz\obj\Debug\MathQuiz.pdb
+E:\MathQuiz\bin\Debug\MathQuiz.exe.config
+E:\MathQuiz\bin\Debug\MathQuiz.exe
+E:\MathQuiz\bin\Debug\MathQuiz.pdb
+E:\MathQuiz\obj\Debug\MathQuiz.csproj.AssemblyReference.cache
+E:\MathQuiz\obj\Debug\MathQuiz.csproj.SuggestedBindingRedirects.cache
+E:\MathQuiz\obj\Debug\MathQuiz.Form1.resources
+E:\MathQuiz\obj\Debug\MathQuiz.Properties.Resources.resources
+E:\MathQuiz\obj\Debug\MathQuiz.csproj.GenerateResource.cache
+E:\MathQuiz\obj\Debug\MathQuiz.csproj.CoreCompileInputs.cache
+E:\MathQuiz\obj\Debug\MathQuiz.exe
+E:\MathQuiz\obj\Debug\MathQuiz.pdb
