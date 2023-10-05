@@ -20,3 +20,14 @@ E:\MathQuiz\obj\Debug\MathQuiz.csproj.GenerateResource.cache
 E:\MathQuiz\obj\Debug\MathQuiz.csproj.CoreCompileInputs.cache
 E:\MathQuiz\obj\Debug\MathQuiz.exe
 E:\MathQuiz\obj\Debug\MathQuiz.pdb
+C:\Users\0_305_8\Source\Repos\Tiymep\Parshukov321\Parshukov2\bin\Debug\MathQuiz.exe.config
+C:\Users\0_305_8\Source\Repos\Tiymep\Parshukov321\Parshukov2\bin\Debug\MathQuiz.exe
+C:\Users\0_305_8\Source\Repos\Tiymep\Parshukov321\Parshukov2\bin\Debug\MathQuiz.pdb
+C:\Users\0_305_8\Source\Repos\Tiymep\Parshukov321\Parshukov2\obj\Debug\MathQuiz.csproj.AssemblyReference.cache
+C:\Users\0_305_8\Source\Repos\Tiymep\Parshukov321\Parshukov2\obj\Debug\MathQuiz.csproj.SuggestedBindingRedirects.cache
+C:\Users\0_305_8\Source\Repos\Tiymep\Parshukov321\Parshukov2\obj\Debug\MathQuiz.Form1.resources
+C:\Users\0_305_8\Source\Repos\Tiymep\Parshukov321\Parshukov2\obj\Debug\MathQuiz.Properties.Resources.resources
+C:\Users\0_305_8\Source\Repos\Tiymep\Parshukov321\Parshukov2\obj\Debug\MathQuiz.csproj.GenerateResource.cache
+C:\Users\0_305_8\Source\Repos\Tiymep\Parshukov321\Parshukov2\obj\Debug\MathQuiz.csproj.CoreCompileInputs.cache
+C:\Users\0_305_8\Source\Repos\Tiymep\Parshukov321\Parshukov2\obj\Debug\MathQuiz.exe
+C:\Users\0_305_8\Source\Repos\Tiymep\Parshukov321\Parshukov2\obj\Debug\MathQuiz.pdb

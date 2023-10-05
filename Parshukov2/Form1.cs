@@ -13,54 +13,60 @@ namespace MathQuiz
 {
     public partial class Form1 : Form
     {
+        // Код программной части создает случайный объект 
         Random randomizer = new Random();
-        // SUM
+        // Сложение
         int addend1;
         int addend2;
-        // SUB
+        // Вычитание
         int minuend;
         int subtrahend;
-        // MULT
+        // Умножение
         int multiplicand;
         int multiplier;
-        // DIV
+        // Деление
         int dividend;
         int divisor;
-        // TIME
+        // Время
         int timeLeft;
+
+        // Этот метод использует метод объекта Random Next() для создания случайных чисел для меток
         public void StartTheQuiz()
         {
-            //SUM
+            // Сложение
             addend1 = randomizer.Next(51);
             addend2 = randomizer.Next(51);
-            //convert into string for display
+            // Конвертация для отображения
             plusLeftLabel.Text = addend1.ToString();
             plusRightLabel.Text = addend2.ToString();
             sum.Value = 0;
-            //SUB
+            // Вычитание
             minuend = randomizer.Next(1, 101);
             subtrahend = randomizer.Next(1, minuend);
             minusLeftLabel.Text = minuend.ToString();
             minusRightLabel.Text = subtrahend.ToString();
             difference.Value = 0;
-            //MULT
+            // Умножение
             multiplicand = randomizer.Next(2, 11);
             multiplier = randomizer.Next(2, 11);
             timesLeftLabel.Text = multiplicand.ToString();
             timesRightLabel.Text = multiplier.ToString();
             product.Value = 0;
-            //DIV
+            // Деление
             divisor = randomizer.Next(2, 11);
             int temporaryQuitent = randomizer.Next(2, 11);
             dividend = divisor * temporaryQuitent;
             dividedLeftLabel.Text = dividend.ToString();
             dividedRightLabel.Text = divisor.ToString();
             quotient.Value = 0;
-            //start the timer
+            // Запуск таймера
             timeLeft = 30;
             timeLabel.Text = "30 seconds";
             timer1.Start();
         }
+
+        // Метод определяет ответы на арифметические примеры
+        // и сравнивает результаты со значениями в элементах управления NumericUpDown.
         private bool CheckTheAnswer()
         {
             if ((addend1 + addend2 == sum.Value)
@@ -74,32 +80,35 @@ namespace MathQuiz
         {
             InitializeComponent();
         }
+
+        // Кнопка запуска
         private void startButton_Click(object sender, EventArgs e)
         {
             StartTheQuiz();
             startButton.Enabled = false;
         }
 
+       // Подведение итогов
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (CheckTheAnswer())
             {
-                //if true
+                // Если true
                 timer1.Stop();
-                MessageBox.Show("You got all the answers right!", "Congratulations!");
+                MessageBox.Show("Вы правильно ответили на все вопрсоы!", "Поздравляем!");
                 startButton.Enabled = true;
             }
             else if (timeLeft > 0)
             {
-                timeLeft --;
+                timeLeft--;
                 timeLabel.Text = timeLeft + " seconds";
             }
             else
             {
-                //if time is over
+                // Если время вышло
                 timer1.Stop();
-                timeLabel.Text = "Time's up!";
-                MessageBox.Show("You didn't finish in time.", "Sorry!");
+                timeLabel.Text = "Время вышло!";
+                MessageBox.Show("Вы не закончили вовремя.", "Извините!");
                 sum.Value = addend1 + addend2;
                 difference.Value = minuend - subtrahend;
                 product.Value = multiplicand * multiplier;
@@ -108,6 +117,9 @@ namespace MathQuiz
             }
         }
 
+        // Обработчик событий
+        // Код будет выделять и удалять текущее значение в каждом элементе управления NumericUpDown,
+        // как только игрок выберет элемент управления и начнет вводить другое значение
         private void answer_Enter(object sender, EventArgs e)
         {
             NumericUpDown answerBox = sender as NumericUpDown;
@@ -118,7 +130,10 @@ namespace MathQuiz
             }
         }
 
+        private void timeLabel_Click_1(object sender, EventArgs e)
+        {
 
         }
     }
 }
+

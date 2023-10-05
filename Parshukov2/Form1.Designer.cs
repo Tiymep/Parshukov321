@@ -1,4 +1,6 @@
-﻿namespace MathQuiz
+﻿using System;
+
+namespace MathQuiz
 {
     partial class Form1
     {
@@ -67,7 +69,7 @@
             this.timeLabel.Name = "timeLabel";
             this.timeLabel.Size = new System.Drawing.Size(200, 30);
             this.timeLabel.TabIndex = 0;
-            this.timeLabel.Click += new System.EventHandler(this.timeLabel_Click);
+            this.timeLabel.Click += new System.EventHandler(this.timeLabel_Click_1);
             // 
             // label1
             // 
@@ -359,6 +361,7 @@
         private System.Windows.Forms.Label dividedLeftLabel;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Timer timer1;
+        private EventHandler timeLabel_Click;
     }
 }
 
