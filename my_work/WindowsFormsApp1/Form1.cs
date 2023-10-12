@@ -12,9 +12,11 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        Random random = new Random();
+        List<string> icons = new List<string>()
         {
-            InitializeComponent();
-        }
+            "!", "!", "N", "N", ",", ",", "k", "k",
+            "b", "b", "v", "v", "w", "w", "z", "z",
+        };
     }
 }
