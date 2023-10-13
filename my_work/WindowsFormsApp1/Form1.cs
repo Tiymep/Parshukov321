@@ -24,14 +24,17 @@ namespace WindowsFormsApp1
         Random random = new Random();
         List<string> icons = new List<string>()
         {
-            "!", "!", "N", "N",
-            ",", ",", "k", "k",
-            "b", "b", "v", "v", 
+            "Y", "Y", "U", "U",
+            "%", "%", "d", "d",
+            "I", "I", "l", "l", 
             "w", "w", "z", "z",
         };
 
         Label firstClicked = null;
         Label secondClicked = null;
+
+        int timeLeft;
+        private object timeLabel;
 
         // Переменная tableLayoutPanel1_Paint
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
