@@ -43,5 +43,17 @@ namespace WindowsFormsApp1
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Создаем экземпляр второй формы
+            Lab5_2 form2 = new Lab5_2();
+
+            // Открываем вторую форму
+            form2.Show();
+
+            // Закрываем текущую (первую) форму, если необходимо
+            this.Hide();
+        }
     }
 }
