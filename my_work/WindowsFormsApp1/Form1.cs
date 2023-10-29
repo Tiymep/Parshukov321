@@ -19,26 +19,41 @@ namespace WindowsFormsApp1
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
+            /* Получаем значения из текстовых полей txtX1, txtX2, txtY1, txtY2
+             и преобразуем их в целочисленный тип */
             int fromX = int.Parse(txtX1.Text);
             int toX = int.Parse(txtX2.Text);
             int fromY = int.Parse(txtY1.Text);
             int toY = int.Parse(txtY2.Text);
-           if (fromX > toX)
+
+            // Проверяем условие, если fromX больше toX
+            if (fromX > toX)
             {
+                // Выводим сообщение об ошибке
                 MessageBox.Show("Интервал должен быть от меньшего к большему");
+                // Очищаем текстовые поля txtX1 и txtX2
                 txtX1.Text = "";
                 txtX2.Text = "";
             }
+
+            // Выполняем цикл от fromX до toX
             for (int x = fromX; x <= toX; x++)
             {
+                // Проверяем условие, если fromY больше toY
                 if (fromY > toY)
                 {
+                    // Выводим сообщение об ошибке
                     MessageBox.Show("Интервал должен быть от меньшего к большему");
+
+                    // Очищаем текстовые поля txtY1 и txtY2
                     txtY1.Text = "";
                     txtY2.Text = "";
                 }
+
+                // Выполняем цикл от fromY до toY
                 for (int y = fromY; y <= toY; y++)
                 {
+                    // Добавляем элемент в список listResult с использованием строкового форматирования
                     listResult.Items.Add($"z(x,y) = {x} - {y} = {x - y}");
                 }
             }
@@ -46,13 +61,9 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Создаем экземпляр второй формы
+            // Переход с Какой-то математической штуки на Таймер
             Lab5_2 form2 = new Lab5_2();
-
-            // Открываем вторую форму
             form2.Show();
-
-            // Закрываем текущую (первую) форму, если необходимо
             this.Hide();
         }
     }

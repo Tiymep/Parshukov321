@@ -35,19 +35,22 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Form1 = new System.Windows.Forms.Button();
+            this.txtData = new System.Windows.Forms.Label();
+            this.Data = new System.Windows.Forms.Timer(this.components);
+            this.Clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtMinutes
             // 
-            this.txtMinutes.Location = new System.Drawing.Point(12, 24);
+            this.txtMinutes.Location = new System.Drawing.Point(37, 24);
             this.txtMinutes.Name = "txtMinutes";
             this.txtMinutes.Size = new System.Drawing.Size(48, 20);
             this.txtMinutes.TabIndex = 0;
             // 
             // txtSeconds
             // 
-            this.txtSeconds.Location = new System.Drawing.Point(115, 24);
+            this.txtSeconds.Location = new System.Drawing.Point(140, 24);
             this.txtSeconds.Name = "txtSeconds";
             this.txtSeconds.Size = new System.Drawing.Size(48, 20);
             this.txtSeconds.TabIndex = 1;
@@ -59,7 +62,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(141, 88);
+            this.btnStart.Location = new System.Drawing.Point(177, 93);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 2;
@@ -70,7 +73,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 31);
+            this.label1.Location = new System.Drawing.Point(91, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(28, 13);
             this.label1.TabIndex = 3;
@@ -79,28 +82,53 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(169, 31);
+            this.label2.Location = new System.Drawing.Point(194, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Сек";
             // 
-            // button1
+            // Form1
             // 
-            this.button1.Location = new System.Drawing.Point(5, 89);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 22);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "For";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Form1.Location = new System.Drawing.Point(6, 118);
+            this.Form1.Name = "Form1";
+            this.Form1.Size = new System.Drawing.Size(54, 22);
+            this.Form1.TabIndex = 5;
+            this.Form1.Text = "For";
+            this.Form1.UseVisualStyleBackColor = true;
+            this.Form1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtData
+            // 
+            this.txtData.AutoSize = true;
+            this.txtData.Location = new System.Drawing.Point(102, 122);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(30, 13);
+            this.txtData.TabIndex = 6;
+            this.txtData.Text = "Date";
+            // 
+            // Data
+            // 
+            this.Data.Tick += new System.EventHandler(this.Data_Tick);
+            // 
+            // Clear
+            // 
+            this.Clear.Location = new System.Drawing.Point(177, 122);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(75, 23);
+            this.Clear.TabIndex = 7;
+            this.Clear.Text = "Сброс";
+            this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // Lab5_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(217, 113);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(264, 152);
+            this.Controls.Add(this.Clear);
+            this.Controls.Add(this.txtData);
+            this.Controls.Add(this.Form1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnStart);
@@ -121,6 +149,9 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Form1;
+        private System.Windows.Forms.Label txtData;
+        private System.Windows.Forms.Timer Data;
+        private System.Windows.Forms.Button Clear;
     }
 }
