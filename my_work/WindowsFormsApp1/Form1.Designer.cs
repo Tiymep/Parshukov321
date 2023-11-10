@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -96,6 +97,7 @@
             this.txtMax.Name = "txtMax";
             this.txtMax.Size = new System.Drawing.Size(103, 20);
             this.txtMax.TabIndex = 2;
+            this.txtMax.TextChanged += new System.EventHandler(this.txtMax_TextChanged);
             // 
             // txtMin
             // 
@@ -103,6 +105,7 @@
             this.txtMin.Name = "txtMin";
             this.txtMin.Size = new System.Drawing.Size(103, 20);
             this.txtMin.TabIndex = 1;
+            this.txtMin.TextChanged += new System.EventHandler(this.txtMin_TextChanged);
             // 
             // txtN
             // 
@@ -110,6 +113,7 @@
             this.txtN.Name = "txtN";
             this.txtN.Size = new System.Drawing.Size(103, 20);
             this.txtN.TabIndex = 0;
+            this.txtN.TextChanged += new System.EventHandler(this.txtN_TextChanged);
             // 
             // groupBox2
             // 
@@ -153,7 +157,6 @@
             // 
             // btnNewArr
             // 
-            this.btnNewArr.Enabled = false;
             this.btnNewArr.Location = new System.Drawing.Point(110, 411);
             this.btnNewArr.Name = "btnNewArr";
             this.btnNewArr.Size = new System.Drawing.Size(116, 29);
@@ -181,12 +184,14 @@
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "Выход";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 452);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(687, 547);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSort);
             this.Controls.Add(this.btnNewArr);
