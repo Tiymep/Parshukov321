@@ -91,9 +91,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 44);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 13);
+            this.label3.Size = new System.Drawing.Size(116, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Введите символ";
+            this.label3.Text = "Введите \"а\" или \"ма\"";
             // 
             // textBox3
             // 
