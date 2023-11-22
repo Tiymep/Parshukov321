@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,20 +11,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Form4 : Form
     {
-        public Form1()
+        public Form4()
         {
             InitializeComponent();
         }
 
-        
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 f = new Form2();
-            f.Show();
-            this.Hide();
+            Process.Start("mspaint.exe");
+            this.Close();
+
         }
     }
 }
