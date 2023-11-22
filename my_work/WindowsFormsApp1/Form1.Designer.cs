@@ -40,6 +40,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,7 +98,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(437, 400);
+            this.button1.Location = new System.Drawing.Point(576, 400);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 20);
             this.button1.TabIndex = 4;
@@ -131,11 +133,29 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Шаг";
             // 
+            // txtB
+            // 
+            this.txtB.Location = new System.Drawing.Point(443, 401);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(111, 20);
+            this.txtB.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(489, 385);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(13, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "b";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtB);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -162,6 +182,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.Label label4;
     }
 }
 
