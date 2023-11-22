@@ -37,9 +37,9 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(26, 399);
+            this.button1.Location = new System.Drawing.Point(29, 411);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 33);
+            this.button1.Size = new System.Drawing.Size(283, 38);
             this.button1.TabIndex = 0;
             this.button1.Text = "МОЛОДЕЦ !!!";
             this.button1.UseVisualStyleBackColor = false;
@@ -48,7 +48,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(16, 9);
+            this.label1.Location = new System.Drawing.Point(47, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(246, 98);
             this.label1.TabIndex = 1;
@@ -60,13 +60,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 444);
+            this.ClientSize = new System.Drawing.Size(334, 461);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximumSize = new System.Drawing.Size(350, 500);
+            this.MinimumSize = new System.Drawing.Size(350, 500);
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "Прыгай в ракету";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form3_Print);
             this.ResumeLayout(false);
 

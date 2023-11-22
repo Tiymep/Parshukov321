@@ -38,7 +38,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(23, 412);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(232, 37);
+            this.button1.Size = new System.Drawing.Size(299, 37);
             this.button1.TabIndex = 0;
             this.button1.Text = "Далее";
             this.button1.UseVisualStyleBackColor = false;
@@ -48,7 +48,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 345);
+            this.label1.Location = new System.Drawing.Point(53, 345);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 64);
             this.label1.TabIndex = 1;
@@ -59,13 +59,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 461);
+            this.ClientSize = new System.Drawing.Size(334, 461);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximumSize = new System.Drawing.Size(350, 500);
+            this.MinimumSize = new System.Drawing.Size(350, 500);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Надень скин";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form2_Print);
             this.ResumeLayout(false);
             this.PerformLayout();
