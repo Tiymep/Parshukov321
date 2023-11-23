@@ -30,6 +30,9 @@ namespace WindowsFormsApp1
         {
              Graphics g = e.Graphics;
 
+            SolidBrush pinkRectangle = new SolidBrush(Color.Pink);
+            g.FillRectangle(pinkRectangle, 101, 100, 101, 99);
+
             // Создание массива вершин треугольника
             Point[] vertices = new Point[3];
             vertices[0] = new Point(100, 100);
@@ -38,7 +41,10 @@ namespace WindowsFormsApp1
 
             // Рисование верхней грани
             g.DrawPolygon(Pens.Black, vertices);
-            g.FillPolygon(Brushes.Red, vertices);
+            g.FillPolygon(Brushes.Pink, vertices);
+
+            Pen chernayaLine = new Pen(Color.Black, 3);
+            g.DrawLine(chernayaLine, 100, 100, 200,100);
 
             // Создание массива вершин нижней грани треугольника
             Point[] bottomVertices = new Point[3];
@@ -48,19 +54,19 @@ namespace WindowsFormsApp1
             }
             // Рисование нижней грани треугольника
             g.DrawPolygon(Pens.Black, bottomVertices);
-            g.FillPolygon(Brushes.Red, bottomVertices);
+            g.FillPolygon(Brushes.Pink, bottomVertices);
 
             // Рисование боковых ребер
             for (int i = 0; i < 3; i++)
             {
-                g.DrawLine(Pens.Black, vertices[i], bottomVertices[i]);
-
-
+                g.DrawLine(chernayaLine, vertices[i], bottomVertices[i]);
             }
             // Создание пера для рисования пунктирной линии и рисование линии с использованием этого пера
             Pen punktLine = new Pen(Color.Black, 2);
             punktLine.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             g.DrawLine(punktLine, 100, 200, 200, 200);
+
+            
         }
     }
 }
